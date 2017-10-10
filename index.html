@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>港石界--选款、安装、售后一站式全屋石材定制</title>
+    <!-- 为移动设备添加 viewport -->
+     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <meta name="format-detection" content="telphone=no, email=no"/>
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 不让百度转码 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="shortcut icon" href="./images/logo.png">
+    <link rel="stylesheet" type="text/css" href="./styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="./lib/css/element-ui.css">
+    <link rel="stylesheet" type="text/css" href="./lib/css/viewer.min.css">
+    <link rel="stylesheet" type="text/css" href="./styles/index.css">
+  </head>
+  <body>
+    <div id="app" v-cloak>
+    <!--  头部header  -->
+        <header>
+            <div class="port-head clearFixed">
+                <div class="logo fl">
+                 
+                </div>
+                <div class="tabs fr">
+                    <el-menu default-active="1" class="max-menu" mode="horizontal">
+                        <el-menu-item index="1"><a href="./index.html">首页</a></el-menu-item>
+                        <el-menu-item index="2"><a href="./special.html">专卖店展示</a></el-menu-item>
+                        <el-menu-item index="3"><a href="./roman.html">罗马柱静态展示</a></el-menu-item>
+                        <el-menu-item index="4"><a href="./filling.html">内填充</a></el-menu-item>
+                        <el-menu-item index="5"><a href="./line.html">线条、大板、雕花</a></el-menu-item>
+                       
+                    </el-menu>
+                    <el-dropdown trigger="click" class="mini-menu">
+                        <span class="el-dropdown-link">
+                        <i class="el-icon-caret-bottom el-icon-menu"></i>
+                        </span>
+                        <el-dropdown-menu slot="dropdown">
+                            <el-dropdown-item class="active"><a href="./index.html">首页</a></el-dropdown-item>
+                            <el-dropdown-item><a href="./special.html">专卖店展示</a></el-dropdown-item>
+                            <el-dropdown-item><a href="./roman.html">罗马柱静态展示</a></el-dropdown-item>
+                            <el-dropdown-item><a href="./filling.html">内填充</a></el-dropdown-item>
+                            <el-dropdown-item><a href="./line.html">线条、大板、雕花</a></el-dropdown-item>
+                        </el-dropdown-menu>
+                    </el-dropdown>
+                </div>
+            </div>
+        </header>
+    <!--  头部header结束  -->
+
+    <!--  banner  -->
+        <div class="banner">
+            <img src="./images/banner-product.jpg">
+        </div>
+    <!--  banner结束  -->
+
+        <!-- 内容区content -->
+        <div class="content">
+            <div class="title">
+                VR全屋定制
+            </div>
+            <div class="sub-title">
+                VR FULL ROOM DESIGN
+            </div>
+            <div class="img-wrap">
+            <el-row  :gutter="20">
+            <el-col :md="6" :sm="8" :xs="12" v-for="(o, index) in vrImgSrc" :key="o">
+                <el-card :body-style="{ padding: '0px' }">
+                    <a :href="o.aHref" target="_blank">
+                        <img :lz-src="o.src" class="image">
+                    </a> 
+                </el-card>
+            </el-col>
+            </el-row>
+            </div>
+        </div>
+        <!-- 内容区content结束 -->
+
+        <!--  底部footer  -->
+        <footer>
+            <p class="copy">COPYRIGHT (©) 2017 港石界 粤ICP备**********号</p>
+        </footer>
+    </div>
+  </body>
+
+  <script type="text/javascript" src="./lib/js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="./lib/js/vue.min.js"></script>
+  <script type="text/javascript" src="./lib/js/element-ui.js"></script>
+  <script type="text/javascript" src="./lib/js/viewer.min.js"></script>
+  <script type="text/javascript" src="scripts/index.js"></script>
+</html>

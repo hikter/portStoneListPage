@@ -1,0 +1,143 @@
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  height: 100%;
+}
+html,body{
+  height: 100%;
+}
+*{
+  box-sizing:border-box;
+}
+[v-cloak] {
+ display: none;
+}
+header{
+  /*background: rgba(0,0,0,0) url(../images/bg.png) no-repeat 0 0;
+  background-size: 100% 100%;*/
+}
+.port-head{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 80px;
+  /*background: url(../images/bg.png) no-repeat 0 0;*/
+  background-size: 100% 100%;
+}
+.port-head .tabs .el-menu-item{padding:0;}
+.port-head .tabs .el-menu-item a{padding:0 20px;}
+.logo{
+  width: 85px;
+  height: 54px;
+  margin: 13px 0;
+  line-height: 54px;
+  text-align: center;
+  font-size: 20px;
+  background: url(../images/logo.png) no-repeat 0 0;
+  background-size: 100%;
+}
+.el-menu{
+  background-color: #fff;
+}
+.el-menu--horizontal .el-menu-item{
+  height: 80px;
+  line-height: 80px;
+}
+.banner img{
+  width: 100%;
+  height: 350px;
+}
+.content{
+  padding: 60px 0;
+}
+.title{
+  font-size: 26px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.2;
+}
+.sub-title{
+  font-size: 16px;
+  color: #c1c1c1;
+  line-height: 2;
+}
+.img-wrap{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 5px 0;
+  text-align: left;
+}
+.image {
+  width: 100%;
+  height: 240px;
+  display: block;
+}
+.el-card{
+  margin-bottom: 20px;
+}
+  span.details {
+    font-size: 13px;
+    color: #999;
+  }
+  
+  .bottom {
+    margin-top: 13px;
+    line-height: 12px;
+  }
+  p.copy{
+    font-size: 14px;
+    color: #909090;
+    height: 60px;
+    line-height: 60px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #efefef;
+  }
+.el-dropdown .el-icon-menu{
+  color: #20a0ff;
+  margin-right: 50px;
+}
+.el-dropdown-link{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 25px;
+}
+.max-menu a{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.mini-menu{
+  display: none;
+}
+.split-btn-group .el-button{
+  margin-bottom: 5px;
+}
+.active a{
+  color: #20a0ff;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .mini-menu{
+        display: block;
+    }
+    .max-menu{
+       display: none;
+    }
+
+    .banner img{
+      width: 100%;
+      height: 150px;
+
+    }
+    .image {
+      height: 170px;
+    }
+}
